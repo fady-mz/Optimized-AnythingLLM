@@ -6,7 +6,7 @@ An independent fork of [AnythingLLM by Mintplex Labs](https://github.com/Mintple
 
 The tradeoff is substantial: about **9% more database storage** at those sizes, slower bulk inserts, and slower million-row sequences when the quota count is omitted. **Hosting or LLM cost savings have not been measured.** The migration is included, so evaluate it on a disposable copy before using this fork with an existing database.
 
-Read the [fix explanation, full results, limitations and reproduction steps](docs/query-efficiency/README.md). The fork includes all 12 raw benchmark pairs and an actual Prisma-client correctness check (168 comparisons passed). The upstream contribution is proposed as a draft for maintainer review.
+Read the [fix explanation, full results, limitations and reproduction steps](docs/query-efficiency/README.md). The fork includes all 12 raw benchmark pairs and an actual Prisma-client correctness check (168 comparisons passed). [Upstream PR #6340](https://github.com/Mintplex-Labs/anything-llm/pull/6340) is a draft for maintainer review; it has not been merged.
 
 ---
 

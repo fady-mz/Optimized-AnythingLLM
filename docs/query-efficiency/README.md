@@ -1,6 +1,6 @@
 # SQLite chat-query efficiency
 
-This fork proposes a single index that accelerates per-user quota counts and sparse chat-history reads. **It is an experimental, workload-dependent tradeoff:** bulk inserts become slower, storage grows, and an uncapped busy-user sequence can regress. The upstream PR is submitted as a draft. No production deployment, whole-app speedup, or monetary saving has been established.
+This fork proposes a single index that accelerates per-user quota counts and sparse chat-history reads. **It is an experimental, workload-dependent tradeoff:** bulk inserts become slower, storage grows, and an uncapped busy-user sequence can regress. [Upstream PR #6340](https://github.com/Mintplex-Labs/anything-llm/pull/6340) is a draft and has not been merged. No production deployment, whole-app speedup, or monetary saving has been established.
 
 ## What changes
 
