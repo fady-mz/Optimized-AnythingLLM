@@ -1,0 +1,16 @@
+{
+  "passedReadComparisons": 168,
+  "fixtureRows": 179,
+  "prismaVersion": "5.3.1",
+  "sqliteVersion": "3.41.2",
+  "migrationsApplied": 41,
+  "indexColumnsVerified": true,
+  "migrationRollbackReapplyPassed": true,
+  "insertUpdateDeletePassed": true,
+  "fullRowsAndReopenPassed": true,
+  "integrityPassed": true,
+  "schemaValid": true,
+  "prismaGeneratedDdlMatches": true,
+  "scope": "Actual Prisma-client correctness; performance measured separately with Python SQLite 3.43.1",
+  "setupNote": "Prisma migrate deploy initially failed on nonexistent SQLite file; creating the empty disposable DB allowed all 41 migrations to apply. First pre-migration client check failed because users table did not yet exist. Final migrated run passed."
+}

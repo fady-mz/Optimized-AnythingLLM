@@ -1,0 +1,1520 @@
+{
+  "sourceCommit": "049d721f900f394c1415ebd7db69a552194c9736",
+  "pairCount": 12,
+  "publicationGatesPassed": true,
+  "correctnessFailures": 0,
+  "paidCalls": 0,
+  "providerSpendUsd": 0,
+  "achievedBillSavingsPercent": null,
+  "acceptedUserOutcomes": null,
+  "attemptedUserOutcomeCostUsd": null,
+  "acceptedUserOutcomeCostUsd": null,
+  "measuredReadResults": 2976,
+  "measuredSqlSequences": 1488,
+  "groups": {
+    "10007-8192": {
+      "readTimings": {
+        "quota_busy": {
+          "baselineP50Ms": {
+            "min": 0.3922,
+            "median": 0.4342,
+            "max": 0.4493
+          },
+          "indexedP50Ms": {
+            "min": 0.0919,
+            "median": 0.1002,
+            "max": 0.1003
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 76.56807751147375,
+            "median": 76.9000460617227,
+            "max": 77.69864233251724
+          },
+          "pairedSpeedupFactor": {
+            "min": 4.267682263329706,
+            "median": 4.32901296111665,
+            "max": 4.484031936127744
+          },
+          "baselineP95Ms": {
+            "min": 0.6092,
+            "median": 0.6965,
+            "max": 0.7107
+          },
+          "indexedP95Ms": {
+            "min": 0.1825,
+            "median": 0.192,
+            "max": 0.297
+          }
+        },
+        "quota_sparse": {
+          "baselineP50Ms": {
+            "min": 0.3782,
+            "median": 0.4129,
+            "max": 0.4193
+          },
+          "indexedP50Ms": {
+            "min": 0.0542,
+            "median": 0.063,
+            "max": 0.0654
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 84.16081375635747,
+            "median": 84.97495826377295,
+            "max": 85.66895822316235
+          },
+          "pairedSpeedupFactor": {
+            "min": 6.313455657492354,
+            "median": 6.655555555555556,
+            "max": 6.977859778597786
+          },
+          "baselineP95Ms": {
+            "min": 0.5061,
+            "median": 0.7045,
+            "max": 0.8198
+          },
+          "indexedP95Ms": {
+            "min": 0.1451,
+            "median": 0.1598,
+            "max": 0.1869
+          }
+        },
+        "history_busy": {
+          "baselineP50Ms": {
+            "min": 0.1097,
+            "median": 0.1143,
+            "max": 0.1157
+          },
+          "indexedP50Ms": {
+            "min": 0.099,
+            "median": 0.1019,
+            "max": 0.1064
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 6.911636045494318,
+            "median": 9.753874202370106,
+            "max": 11.927398444252368
+          },
+          "pairedSpeedupFactor": {
+            "min": 1.074248120300752,
+            "median": 1.108080808080808,
+            "max": 1.1354268891069674
+          },
+          "baselineP95Ms": {
+            "min": 0.1534,
+            "median": 0.2414,
+            "max": 0.2594
+          },
+          "indexedP95Ms": {
+            "min": 0.1582,
+            "median": 0.2485,
+            "max": 0.2546
+          }
+        },
+        "history_sparse": {
+          "baselineP50Ms": {
+            "min": 0.3303,
+            "median": 0.3531,
+            "max": 0.3886
+          },
+          "indexedP50Ms": {
+            "min": 0.0684,
+            "median": 0.0738,
+            "max": 0.0791
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 79.09940526762956,
+            "median": 79.291553133515,
+            "max": 79.64487905301081
+          },
+          "pairedSpeedupFactor": {
+            "min": 4.784552845528455,
+            "median": 4.828947368421052,
+            "max": 4.912768647281921
+          },
+          "baselineP95Ms": {
+            "min": 0.4803,
+            "median": 0.6458,
+            "max": 0.8462
+          },
+          "indexedP95Ms": {
+            "min": 0.1225,
+            "median": 0.2055,
+            "max": 0.273
+          }
+        }
+      },
+      "sqlSequenceTimings": {
+        "capped": {
+          "baselineP50Ms": {
+            "min": 5.4344,
+            "median": 6.9064,
+            "max": 8.8485
+          },
+          "indexedP50Ms": {
+            "min": 5.078,
+            "median": 6.1528,
+            "max": 8.9207
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -0.8159575069220937,
+            "median": 6.558221698807598,
+            "max": 10.911618209197261
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.9919064647393141,
+            "median": 1.0701851122489168,
+            "max": 1.1224808217396958
+          },
+          "baselineP95Ms": {
+            "min": 6.8441,
+            "median": 9.8874,
+            "max": 13.0931
+          },
+          "indexedP95Ms": {
+            "min": 6.4945,
+            "median": 7.3573,
+            "max": 13.6617
+          }
+        },
+        "uncapped": {
+          "baselineP50Ms": {
+            "min": 4.6413,
+            "median": 7.0496,
+            "max": 16.6103
+          },
+          "indexedP50Ms": {
+            "min": 4.8189,
+            "median": 7.2874,
+            "max": 13.102
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -3.8265141231982325,
+            "median": -3.3732410349523345,
+            "max": 21.121232006646473
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.9631451161053353,
+            "median": 0.9673683343853775,
+            "max": 1.2677682796519614
+          },
+          "baselineP95Ms": {
+            "min": 6.7114,
+            "median": 9.9211,
+            "max": 23.8418
+          },
+          "indexedP95Ms": {
+            "min": 6.3024,
+            "median": 8.6327,
+            "max": 22.5122
+          }
+        }
+      },
+      "writeTimings": {
+        "insert100": {
+          "baselineP50Ms": {
+            "min": 4.9117,
+            "median": 7.1411,
+            "max": 11.8268
+          },
+          "indexedP50Ms": {
+            "min": 5.5179,
+            "median": 8.6104,
+            "max": 13.1912
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -20.57526151433253,
+            "median": -12.341958995867008,
+            "max": -11.536510298643755
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.8293575211372294,
+            "median": 0.8901393646133492,
+            "max": 0.896567408575414
+          },
+          "baselineP95Ms": {
+            "min": 6.8769,
+            "median": 11.63,
+            "max": 32.4088
+          },
+          "indexedP95Ms": {
+            "min": 8.6308,
+            "median": 12.0734,
+            "max": 33.8954
+          }
+        },
+        "update1": {
+          "baselineP50Ms": {
+            "min": 4.4154,
+            "median": 6.3889,
+            "max": 11.5758
+          },
+          "indexedP50Ms": {
+            "min": 4.4159,
+            "median": 6.5876,
+            "max": 14.741
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -27.343250574474332,
+            "median": -3.1100815476842847,
+            "max": -0.011324002355395102
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.7852791533817244,
+            "median": 0.9698372700224663,
+            "max": 0.9998867727982971
+          },
+          "baselineP95Ms": {
+            "min": 5.379,
+            "median": 19.3579,
+            "max": 144.289
+          },
+          "indexedP95Ms": {
+            "min": 6.8214,
+            "median": 31.44,
+            "max": 54.1269
+          }
+        }
+      },
+      "cpu": {
+        "quota_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 0.3939075630252101,
+            "median": 0.4770992366412214,
+            "max": 0.4937923250564334
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.08922198429693076,
+            "median": 0.10412039093736117,
+            "max": 0.1074938574938575
+          },
+          "pairedCpuReductionPercent": {
+            "min": 77.34951225315251,
+            "median": 77.46928746928748,
+            "max": 78.91413340102811
+          }
+        },
+        "quota_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 0.49019607843137253,
+            "median": 0.5425347222222222,
+            "max": 0.5747126436781609
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.04431366988088486,
+            "median": 0.06341314935064934,
+            "max": 0.06673547835990888
+          },
+          "pairedCpuReductionPercent": {
+            "min": 87.6993166287016,
+            "median": 88.96611201298701,
+            "max": 90.96001134429949
+          }
+        },
+        "history_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 0.12873326467559218,
+            "median": 0.14602803738317757,
+            "max": 0.1783166904422254
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.10850694444444445,
+            "median": 0.1414027149321267,
+            "max": 0.17325017325017325
+          },
+          "pairedCpuReductionPercent": {
+            "min": -18.64171864171864,
+            "median": 15.711805555555557,
+            "max": 20.701357466063353
+          }
+        },
+        "history_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 0.3949447077409163,
+            "median": 0.5868544600938967,
+            "max": 0.6474447513812155
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.07388871374527112,
+            "median": 0.10670081092616304,
+            "max": 0.10912265386294194
+          },
+          "pairedCpuReductionPercent": {
+            "min": 81.29137767969735,
+            "median": 81.4054997817547,
+            "max": 83.51970408308436
+          }
+        }
+      },
+      "storageGrowthPercent": {
+        "min": 7.622298065984068,
+        "median": 7.622298065984068,
+        "max": 7.622298065984068
+      },
+      "writeP95Diagnostics": [
+        {
+          "trial": 1,
+          "operation": "insert100",
+          "passed": true
+        },
+        {
+          "trial": 1,
+          "operation": "update1",
+          "passed": true
+        },
+        {
+          "trial": 2,
+          "operation": "insert100",
+          "passed": true
+        },
+        {
+          "trial": 2,
+          "operation": "update1",
+          "passed": false
+        },
+        {
+          "trial": 3,
+          "operation": "insert100",
+          "passed": true
+        },
+        {
+          "trial": 3,
+          "operation": "update1",
+          "passed": true
+        }
+      ]
+    },
+    "100007-8192": {
+      "readTimings": {
+        "quota_busy": {
+          "baselineP50Ms": {
+            "min": 26.9164,
+            "median": 30.4828,
+            "max": 32.6549
+          },
+          "indexedP50Ms": {
+            "min": 0.5166,
+            "median": 0.5875,
+            "max": 0.6182
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 97.97197107877228,
+            "median": 98.08072401955685,
+            "max": 98.20088256280069
+          },
+          "pairedSpeedupFactor": {
+            "min": 49.30896150113232,
+            "median": 52.1029810298103,
+            "max": 55.582808510638294
+          },
+          "baselineP95Ms": {
+            "min": 32.4283,
+            "median": 38.0085,
+            "max": 41.5892
+          },
+          "indexedP95Ms": {
+            "min": 0.8695,
+            "median": 0.9447,
+            "max": 1.169
+          }
+        },
+        "quota_sparse": {
+          "baselineP50Ms": {
+            "min": 26.9005,
+            "median": 31.1434,
+            "max": 33.4634
+          },
+          "indexedP50Ms": {
+            "min": 0.1563,
+            "median": 0.1787,
+            "max": 0.2102
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 99.37185103725264,
+            "median": 99.41896990762254,
+            "max": 99.4262026625224
+          },
+          "pairedSpeedupFactor": {
+            "min": 159.197906755471,
+            "median": 172.10812539987205,
+            "max": 174.27756015668717
+          },
+          "baselineP95Ms": {
+            "min": 35.8883,
+            "median": 39.8261,
+            "max": 42.0363
+          },
+          "indexedP95Ms": {
+            "min": 0.2496,
+            "median": 0.2763,
+            "max": 0.3504
+          }
+        },
+        "history_busy": {
+          "baselineP50Ms": {
+            "min": 0.1507,
+            "median": 0.1706,
+            "max": 0.2002
+          },
+          "indexedP50Ms": {
+            "min": 0.1981,
+            "median": 0.2138,
+            "max": 0.2275
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -33.35287221570926,
+            "median": -31.453218314532183,
+            "max": -6.793206793206785
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.7498901098901098,
+            "median": 0.7607269056032308,
+            "max": 0.9363891487371375
+          },
+          "baselineP95Ms": {
+            "min": 0.3915,
+            "median": 0.4146,
+            "max": 0.4225
+          },
+          "indexedP95Ms": {
+            "min": 0.3751,
+            "median": 0.3872,
+            "max": 0.477
+          }
+        },
+        "history_sparse": {
+          "baselineP50Ms": {
+            "min": 2.9952,
+            "median": 3.5914,
+            "max": 3.8369
+          },
+          "indexedP50Ms": {
+            "min": 0.159,
+            "median": 0.1866,
+            "max": 0.2045
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 94.3058417330289,
+            "median": 94.69150641025641,
+            "max": 95.1366988975475
+          },
+          "pairedSpeedupFactor": {
+            "min": 17.56185819070905,
+            "median": 18.837735849056603,
+            "max": 20.562165058949628
+          },
+          "baselineP95Ms": {
+            "min": 5.0292,
+            "median": 5.4342,
+            "max": 5.7789
+          },
+          "indexedP95Ms": {
+            "min": 0.2933,
+            "median": 0.3244,
+            "max": 0.3332
+          }
+        }
+      },
+      "sqlSequenceTimings": {
+        "capped": {
+          "baselineP50Ms": {
+            "min": 44.0206,
+            "median": 45.3942,
+            "max": 54.7847
+          },
+          "indexedP50Ms": {
+            "min": 6.7645,
+            "median": 13.5907,
+            "max": 19.8049
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 55.009927170461104,
+            "median": 75.19252638054054,
+            "max": 85.09831652501862
+          },
+          "pairedSpeedupFactor": {
+            "min": 2.2227125610328757,
+            "median": 4.031043286953579,
+            "max": 6.710651193731983
+          },
+          "baselineP95Ms": {
+            "min": 50.1308,
+            "median": 59.8754,
+            "max": 67.424
+          },
+          "indexedP95Ms": {
+            "min": 7.8498,
+            "median": 18.3643,
+            "max": 33.356
+          }
+        },
+        "uncapped": {
+          "baselineP50Ms": {
+            "min": 5.505,
+            "median": 12.7497,
+            "max": 16.1366
+          },
+          "indexedP50Ms": {
+            "min": 5.8673,
+            "median": 13.1519,
+            "max": 15.4224
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -6.581289736603102,
+            "median": -3.1545840294281424,
+            "max": 4.425963338001814
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.9382509842687436,
+            "median": 0.9694188672359128,
+            "max": 1.0463092644465195
+          },
+          "baselineP95Ms": {
+            "min": 6.5744,
+            "median": 22.2689,
+            "max": 30.5268
+          },
+          "indexedP95Ms": {
+            "min": 6.9609,
+            "median": 14.0639,
+            "max": 35.3938
+          }
+        }
+      },
+      "writeTimings": {
+        "insert100": {
+          "baselineP50Ms": {
+            "min": 5.7996,
+            "median": 13.1221,
+            "max": 16.4565
+          },
+          "indexedP50Ms": {
+            "min": 9.8378,
+            "median": 25.1632,
+            "max": 26.4716
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -91.76198931573454,
+            "median": -69.62893992689149,
+            "max": -60.85801962750281
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.5214797799961849,
+            "median": 0.589522047612271,
+            "max": 0.6216662385348827
+          },
+          "baselineP95Ms": {
+            "min": 6.6069,
+            "median": 29.2706,
+            "max": 32.7546
+          },
+          "indexedP95Ms": {
+            "min": 11.3454,
+            "median": 35.8147,
+            "max": 39.8551
+          }
+        },
+        "update1": {
+          "baselineP50Ms": {
+            "min": 5.1338,
+            "median": 12.4607,
+            "max": 16.5849
+          },
+          "indexedP50Ms": {
+            "min": 5.2164,
+            "median": 12.8325,
+            "max": 15.6415
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -2.9837810074875515,
+            "median": -1.6089446413962483,
+            "max": 5.688306833324286
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.9710266900448081,
+            "median": 0.9841653247450348,
+            "max": 1.0603139085126108
+          },
+          "baselineP95Ms": {
+            "min": 6.2476,
+            "median": 22.6515,
+            "max": 28.1383
+          },
+          "indexedP95Ms": {
+            "min": 7.2104,
+            "median": 22.0933,
+            "max": 39.9295
+          }
+        }
+      },
+      "cpu": {
+        "quota_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 25.0,
+            "median": 29.51388888888889,
+            "max": 35.714285714285715
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.5482456140350878,
+            "median": 0.5580357142857143,
+            "max": 0.6056201550387597
+          },
+          "pairedCpuReductionPercent": {
+            "min": 97.76785714285714,
+            "median": 98.14241486068111,
+            "max": 98.30426356589147
+          }
+        },
+        "quota_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 26.5625,
+            "median": 29.296875,
+            "max": 35.15625
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.059966418805468935,
+            "median": 0.06451612903225806,
+            "max": 0.06636580833554552
+          },
+          "pairedCpuReductionPercent": {
+            "min": 99.75711574952561,
+            "median": 99.77347137421468,
+            "max": 99.82942885317556
+          }
+        },
+        "history_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 0.1437883435582822,
+            "median": 0.15987380627557982,
+            "max": 0.16556291390728478
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.08725568408456322,
+            "median": 0.1071673525377229,
+            "max": 0.11032656663724624
+          },
+          "pairedCpuReductionPercent": {
+            "min": 23.271550456016477,
+            "median": 35.27091906721537,
+            "max": 45.42215130966627
+          }
+        },
+        "history_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 10.216346153846153,
+            "median": 11.363636363636363,
+            "max": 13.157894736842104
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.1182033096926714,
+            "median": 0.13557483731019523,
+            "max": 0.16469038208168643
+          },
+          "pairedCpuReductionPercent": {
+            "min": 98.55072463768117,
+            "median": 98.84299819218467,
+            "max": 98.96963123644251
+          }
+        }
+      },
+      "storageGrowthPercent": {
+        "min": 8.901394040158594,
+        "median": 8.901394040158594,
+        "max": 8.901394040158594
+      },
+      "writeP95Diagnostics": [
+        {
+          "trial": 1,
+          "operation": "insert100",
+          "passed": true
+        },
+        {
+          "trial": 1,
+          "operation": "update1",
+          "passed": true
+        },
+        {
+          "trial": 2,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 2,
+          "operation": "update1",
+          "passed": false
+        },
+        {
+          "trial": 3,
+          "operation": "insert100",
+          "passed": true
+        },
+        {
+          "trial": 3,
+          "operation": "update1",
+          "passed": true
+        }
+      ]
+    },
+    "1000007-8192": {
+      "readTimings": {
+        "quota_busy": {
+          "baselineP50Ms": {
+            "min": 264.8059,
+            "median": 303.2406,
+            "max": 351.012
+          },
+          "indexedP50Ms": {
+            "min": 4.3838,
+            "median": 4.9756,
+            "max": 5.4156
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 98.34452329045538,
+            "median": 98.35919068884576,
+            "max": 98.45714676421319
+          },
+          "pairedSpeedupFactor": {
+            "min": 60.40556138509969,
+            "median": 60.945534206929814,
+            "max": 64.81497894970086
+          },
+          "baselineP95Ms": {
+            "min": 361.1029,
+            "median": 419.1178,
+            "max": 456.8799
+          },
+          "indexedP95Ms": {
+            "min": 7.16,
+            "median": 7.2009,
+            "max": 7.894
+          }
+        },
+        "quota_sparse": {
+          "baselineP50Ms": {
+            "min": 271.341,
+            "median": 312.7093,
+            "max": 355.2234
+          },
+          "indexedP50Ms": {
+            "min": 0.2184,
+            "median": 0.2387,
+            "max": 0.2589
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 99.91951087377137,
+            "median": 99.92366712470655,
+            "max": 99.92711628794724
+          },
+          "pairedSpeedupFactor": {
+            "min": 1242.4038461538462,
+            "median": 1310.0515291160452,
+            "max": 1372.0486674391657
+          },
+          "baselineP95Ms": {
+            "min": 356.5877,
+            "median": 429.144,
+            "max": 458.8248
+          },
+          "indexedP95Ms": {
+            "min": 0.3801,
+            "median": 0.413,
+            "max": 0.4803
+          }
+        },
+        "history_busy": {
+          "baselineP50Ms": {
+            "min": 0.1702,
+            "median": 0.1703,
+            "max": 0.203
+          },
+          "indexedP50Ms": {
+            "min": 0.2233,
+            "median": 0.2242,
+            "max": 0.2553
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -31.650029359953024,
+            "median": -31.19858989424207,
+            "max": -25.76354679802957
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.7595896520963425,
+            "median": 0.7622033139274518,
+            "max": 0.7951429690560124
+          },
+          "baselineP95Ms": {
+            "min": 0.2986,
+            "median": 0.3478,
+            "max": 0.4429
+          },
+          "indexedP95Ms": {
+            "min": 0.3747,
+            "median": 0.4076,
+            "max": 0.487
+          }
+        },
+        "history_sparse": {
+          "baselineP50Ms": {
+            "min": 3.2974,
+            "median": 3.4227,
+            "max": 4.3201
+          },
+          "indexedP50Ms": {
+            "min": 0.1717,
+            "median": 0.1872,
+            "max": 0.2107
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 94.53063371022876,
+            "median": 94.79286710741796,
+            "max": 95.1227980833777
+          },
+          "pairedSpeedupFactor": {
+            "min": 18.283653846153843,
+            "median": 19.20442632498544,
+            "max": 20.503559563360227
+          },
+          "baselineP95Ms": {
+            "min": 4.9682,
+            "median": 5.7912,
+            "max": 5.8064
+          },
+          "indexedP95Ms": {
+            "min": 0.3366,
+            "median": 0.3406,
+            "max": 0.3805
+          }
+        }
+      },
+      "sqlSequenceTimings": {
+        "capped": {
+          "baselineP50Ms": {
+            "min": 290.792,
+            "median": 354.5244,
+            "max": 363.6597
+          },
+          "indexedP50Ms": {
+            "min": 9.5,
+            "median": 15.6776,
+            "max": 23.0769
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 93.65425973788132,
+            "median": 95.57785021284853,
+            "max": 96.73306005667281
+          },
+          "pairedSpeedupFactor": {
+            "min": 15.758602758602759,
+            "median": 22.613435729958667,
+            "max": 30.609684210526314
+          },
+          "baselineP95Ms": {
+            "min": 336.1876,
+            "median": 399.7372,
+            "max": 407.7832
+          },
+          "indexedP95Ms": {
+            "min": 13.004,
+            "median": 25.1237,
+            "max": 33.3063
+          }
+        },
+        "uncapped": {
+          "baselineP50Ms": {
+            "min": 4.5696,
+            "median": 5.4472,
+            "max": 13.8882
+          },
+          "indexedP50Ms": {
+            "min": 5.0325,
+            "median": 5.801,
+            "max": 14.0432
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -10.12998949579831,
+            "median": -6.495080041122048,
+            "max": -1.116055356345691
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.9080178837555888,
+            "median": 0.9390105154283743,
+            "max": 0.9889626296000911
+          },
+          "baselineP95Ms": {
+            "min": 7.4788,
+            "median": 8.9884,
+            "max": 15.2379
+          },
+          "indexedP95Ms": {
+            "min": 7.4403,
+            "median": 10.6877,
+            "max": 15.5572
+          }
+        }
+      },
+      "writeTimings": {
+        "insert100": {
+          "baselineP50Ms": {
+            "min": 4.9324,
+            "median": 6.023,
+            "max": 14.0316
+          },
+          "indexedP50Ms": {
+            "min": 14.5676,
+            "median": 22.9891,
+            "max": 35.516
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -281.6885273119708,
+            "median": -195.34506528262102,
+            "max": -153.11439892813365
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.2619937274621451,
+            "median": 0.33858700129053515,
+            "max": 0.3950782745804708
+          },
+          "baselineP95Ms": {
+            "min": 6.0018,
+            "median": 7.9921,
+            "max": 24.6057
+          },
+          "indexedP95Ms": {
+            "min": 22.5506,
+            "median": 31.002,
+            "max": 49.3379
+          }
+        },
+        "update1": {
+          "baselineP50Ms": {
+            "min": 3.6649,
+            "median": 4.5086,
+            "max": 14.4734
+          },
+          "indexedP50Ms": {
+            "min": 3.8594,
+            "median": 4.6607,
+            "max": 14.3706
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -5.307102513029016,
+            "median": -3.373552765825316,
+            "max": 0.710268492544941
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.9496035653210343,
+            "median": 0.9673654172120068,
+            "max": 1.0071534939390143
+          },
+          "baselineP95Ms": {
+            "min": 4.8356,
+            "median": 5.7594,
+            "max": 24.1075
+          },
+          "indexedP95Ms": {
+            "min": 5.0885,
+            "median": 5.8482,
+            "max": 23.319
+          }
+        }
+      },
+      "cpu": {
+        "quota_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 343.75,
+            "median": 359.375,
+            "max": 359.375
+          },
+          "indexedCpuMsPerRead": {
+            "min": 5.0,
+            "median": 5.095108695652174,
+            "max": 5.533854166666667
+          },
+          "pairedCpuReductionPercent": {
+            "min": 98.39015151515152,
+            "median": 98.58223062381852,
+            "max": 98.60869565217392
+          }
+        },
+        "quota_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 328.125,
+            "median": 328.125,
+            "max": 343.75
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.09412650602409639,
+            "median": 0.13557483731019523,
+            "max": 0.17297047970479704
+          },
+          "pairedCpuReductionPercent": {
+            "min": 99.94968131499496,
+            "median": 99.95868195434356,
+            "max": 99.97131382673551
+          }
+        },
+        "history_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 0.12644508670520233,
+            "median": 0.14833860759493672,
+            "max": 0.21822625698324022
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.12135922330097088,
+            "median": 0.12194328824141519,
+            "max": 0.12388503468780972
+          },
+          "pairedCpuReductionPercent": {
+            "min": 4.022191400832186,
+            "median": 17.793964620187317,
+            "max": 43.23092170465807
+          }
+        },
+        "history_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 10.0,
+            "median": 11.067708333333334,
+            "max": 11.363636363636363
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.10160241523455643,
+            "median": 0.14204545454545456,
+            "max": 0.15096618357487923
+          },
+          "pairedCpuReductionPercent": {
+            "min": 98.67149758454107,
+            "median": 98.71657754010695,
+            "max": 98.98397584765443
+          }
+        }
+      },
+      "storageGrowthPercent": {
+        "min": 9.174608929866368,
+        "median": 9.174608929866368,
+        "max": 9.174608929866368
+      },
+      "writeP95Diagnostics": [
+        {
+          "trial": 1,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 1,
+          "operation": "update1",
+          "passed": true
+        },
+        {
+          "trial": 2,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 2,
+          "operation": "update1",
+          "passed": true
+        },
+        {
+          "trial": 3,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 3,
+          "operation": "update1",
+          "passed": true
+        }
+      ]
+    },
+    "1000007-524288": {
+      "readTimings": {
+        "quota_busy": {
+          "baselineP50Ms": {
+            "min": 62.7301,
+            "median": 62.8802,
+            "max": 77.447
+          },
+          "indexedP50Ms": {
+            "min": 4.4884,
+            "median": 4.531,
+            "max": 5.2169
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 92.77699222542289,
+            "median": 92.86198199115144,
+            "max": 93.26390951231164
+          },
+          "pairedSpeedupFactor": {
+            "min": 13.84464798057824,
+            "median": 14.00949113269762,
+            "max": 14.845406275757634
+          },
+          "baselineP95Ms": {
+            "min": 72.4101,
+            "median": 74.8381,
+            "max": 89.2423
+          },
+          "indexedP95Ms": {
+            "min": 6.456,
+            "median": 6.5643,
+            "max": 8.2073
+          }
+        },
+        "quota_sparse": {
+          "baselineP50Ms": {
+            "min": 61.1646,
+            "median": 61.6565,
+            "max": 74.898
+          },
+          "indexedP50Ms": {
+            "min": 0.1935,
+            "median": 0.2298,
+            "max": 0.2823
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 99.62308739886245,
+            "median": 99.62728990455183,
+            "max": 99.68364053717347
+          },
+          "pairedSpeedupFactor": {
+            "min": 265.3134962805526,
+            "median": 268.30504786771104,
+            "max": 316.0961240310077
+          },
+          "baselineP95Ms": {
+            "min": 73.042,
+            "median": 76.164,
+            "max": 89.0754
+          },
+          "indexedP95Ms": {
+            "min": 0.3299,
+            "median": 0.3435,
+            "max": 0.3842
+          }
+        },
+        "history_busy": {
+          "baselineP50Ms": {
+            "min": 0.1466,
+            "median": 0.1738,
+            "max": 0.2325
+          },
+          "indexedP50Ms": {
+            "min": 0.1947,
+            "median": 0.2254,
+            "max": 0.2492
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -32.810368349249664,
+            "median": -29.689298043728417,
+            "max": -7.182795698924727
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.7529532614278377,
+            "median": 0.7710736468500444,
+            "max": 0.9329855537720707
+          },
+          "baselineP95Ms": {
+            "min": 0.2676,
+            "median": 0.2742,
+            "max": 0.431
+          },
+          "indexedP95Ms": {
+            "min": 0.2767,
+            "median": 0.3817,
+            "max": 0.3858
+          }
+        },
+        "history_sparse": {
+          "baselineP50Ms": {
+            "min": 1.6515,
+            "median": 1.696,
+            "max": 2.0051
+          },
+          "indexedP50Ms": {
+            "min": 0.1374,
+            "median": 0.1695,
+            "max": 0.2492
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 87.57169218492842,
+            "median": 90.00589622641509,
+            "max": 91.68029064486831
+          },
+          "pairedSpeedupFactor": {
+            "min": 8.046147672552166,
+            "median": 10.005899705014748,
+            "max": 12.019650655021834
+          },
+          "baselineP95Ms": {
+            "min": 2.17,
+            "median": 2.4352,
+            "max": 2.495
+          },
+          "indexedP95Ms": {
+            "min": 0.2852,
+            "median": 0.2967,
+            "max": 0.3247
+          }
+        }
+      },
+      "sqlSequenceTimings": {
+        "capped": {
+          "baselineP50Ms": {
+            "min": 67.9339,
+            "median": 69.3153,
+            "max": 81.3979
+          },
+          "indexedP50Ms": {
+            "min": 9.3774,
+            "median": 10.2451,
+            "max": 37.3129
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": 54.159873903380806,
+            "median": 85.21956912831654,
+            "max": 86.1962878621719
+          },
+          "pairedSpeedupFactor": {
+            "min": 2.181494871746769,
+            "median": 6.765702628573658,
+            "max": 7.2444280930748395
+          },
+          "baselineP95Ms": {
+            "min": 78.4104,
+            "median": 144.1413,
+            "max": 180.3483
+          },
+          "indexedP95Ms": {
+            "min": 11.5389,
+            "median": 17.0603,
+            "max": 88.0006
+          }
+        },
+        "uncapped": {
+          "baselineP50Ms": {
+            "min": 4.4219,
+            "median": 5.1398,
+            "max": 12.9282
+          },
+          "indexedP50Ms": {
+            "min": 4.5308,
+            "median": 5.3685,
+            "max": 16.4528
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -27.262882690552438,
+            "median": -4.449589478189808,
+            "max": -2.4627422601144255
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.7857750656423224,
+            "median": 0.957399646083636,
+            "max": 0.9759645095788823
+          },
+          "baselineP95Ms": {
+            "min": 5.7708,
+            "median": 6.5165,
+            "max": 78.6113
+          },
+          "indexedP95Ms": {
+            "min": 5.5682,
+            "median": 6.934,
+            "max": 75.5708
+          }
+        }
+      },
+      "writeTimings": {
+        "insert100": {
+          "baselineP50Ms": {
+            "min": 5.2251,
+            "median": 7.2051,
+            "max": 8.9513
+          },
+          "indexedP50Ms": {
+            "min": 17.7567,
+            "median": 25.0992,
+            "max": 199.709
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -2131.0614100745147,
+            "median": -248.35324978140486,
+            "max": -239.83464431302744
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.04482171559619246,
+            "median": 0.2870649263721553,
+            "max": 0.2942607579110984
+          },
+          "baselineP95Ms": {
+            "min": 6.3787,
+            "median": 207.0836,
+            "max": 207.4605
+          },
+          "indexedP95Ms": {
+            "min": 23.7219,
+            "median": 1271.7403,
+            "max": 1304.2225
+          }
+        },
+        "update1": {
+          "baselineP50Ms": {
+            "min": 4.4552,
+            "median": 5.7936,
+            "max": 6.2882
+          },
+          "indexedP50Ms": {
+            "min": 4.4611,
+            "median": 6.1045,
+            "max": 6.9364
+          },
+          "pairedMedianTimeReductionPercent": {
+            "min": -19.725214029273697,
+            "median": -0.13242952056025104,
+            "max": 2.9213447409433546
+          },
+          "pairedSpeedupFactor": {
+            "min": 0.835245948907214,
+            "median": 0.9986774562327676,
+            "max": 1.0300925546727824
+          },
+          "baselineP95Ms": {
+            "min": 5.3662,
+            "median": 10.199,
+            "max": 17.1679
+          },
+          "indexedP95Ms": {
+            "min": 5.6496,
+            "median": 10.3902,
+            "max": 11.1652
+          }
+        }
+      },
+      "cpu": {
+        "quota_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 62.5,
+            "median": 66.40625,
+            "max": 70.3125
+          },
+          "indexedCpuMsPerRead": {
+            "min": 4.310344827586207,
+            "median": 4.385964912280702,
+            "max": 5.9523809523809526
+          },
+          "pairedCpuReductionPercent": {
+            "min": 91.53439153439153,
+            "median": 92.98245614035088,
+            "max": 93.50912778904666
+          }
+        },
+        "quota_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 62.5,
+            "median": 62.5,
+            "max": 78.125
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.10377750103777501,
+            "median": 0.10825635103926097,
+            "max": 0.14925373134328357
+          },
+          "pairedCpuReductionPercent": {
+            "min": 99.8089552238806,
+            "median": 99.82678983833718,
+            "max": 99.83395599833956
+          }
+        },
+        "history_busy": {
+          "baselineCpuMsPerRead": {
+            "min": 0.11921793037672866,
+            "median": 0.12013070220399795,
+            "max": 0.12629907621247113
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.09803921568627451,
+            "median": 0.10865785813630041,
+            "max": 0.1697216564833673
+          },
+          "pairedCpuReductionPercent": {
+            "min": -34.38075841334498,
+            "median": 8.85778859527122,
+            "max": 18.389542483660126
+          }
+        },
+        "history_sparse": {
+          "baselineCpuMsPerRead": {
+            "min": 1.4291158536585367,
+            "median": 1.5151515151515151,
+            "max": 1.6304347826086956
+          },
+          "indexedCpuMsPerRead": {
+            "min": 0.09908838684106223,
+            "median": 0.0998003992015968,
+            "max": 0.13469827586206898
+          },
+          "pairedCpuReductionPercent": {
+            "min": 91.73850574712642,
+            "median": 93.01663339986693,
+            "max": 93.46016646848989
+          }
+        }
+      },
+      "storageGrowthPercent": {
+        "min": 9.174608929866368,
+        "median": 9.174608929866368,
+        "max": 9.174608929866368
+      },
+      "writeP95Diagnostics": [
+        {
+          "trial": 1,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 1,
+          "operation": "update1",
+          "passed": true
+        },
+        {
+          "trial": 2,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 2,
+          "operation": "update1",
+          "passed": true
+        },
+        {
+          "trial": 3,
+          "operation": "insert100",
+          "passed": false
+        },
+        {
+          "trial": 3,
+          "operation": "update1",
+          "passed": true
+        }
+      ]
+    }
+  },
+  "rawFilesSha256": {
+    "pair-10000-8192-1.json": "e5373ef7ccaad415bd2432d72dbe472dd8a88b7451acecbcd918a20c1c644bc4",
+    "pair-10000-8192-2.json": "9f129c1fb2e57a94f1e14a33b90bd0b1b62b1ac514f0922f5f877bc2d7b0a6d6",
+    "pair-10000-8192-3.json": "c90ed2a829f8d5df8ce7a45ce8e1087582d3d55c875df78c7a119fcab10c98c5",
+    "pair-100000-8192-1.json": "5f48cc00a878b53be866b9391533702946448e857318c402bd80999f583e251f",
+    "pair-100000-8192-2.json": "2e8888eb147eb5becc5538e3a8c0cf6cb2f10776cc7efe64e66ad90b32672dd8",
+    "pair-100000-8192-3.json": "39edd9ebc1de6fc5bae77b05459ab7c29e3a5a8a27a8ff158042a54f4be9300f",
+    "pair-1000000-524288-1.json": "7cae0915db476b9510af2d1e2d998134146dc735e4e7bdc1153ca8c77507e136",
+    "pair-1000000-524288-2.json": "6222ef05fef7a970370b5a78236d3bb0b86cafa5cfa21257f7c432666e57056c",
+    "pair-1000000-524288-3.json": "53c0a87a13260b7bf1abaeeb5cff53e2920731a0aa3b5a82aa7b8232f7044000",
+    "pair-1000000-8192-1.json": "34bbf90aa9ceaff405df53cb6b4e5dd79265107db0ba4a0ff3cd957a147d8478",
+    "pair-1000000-8192-2.json": "a0ee954f6587641daf002f6177e657b6e7b15d2463de211c57ed9dd283a83a88",
+    "pair-1000000-8192-3.json": "78675db677027a877422861338e9f98f38f44bf4ef8d77949501942b3fd95d7d"
+  },
+  "formulas": {
+    "timeReductionPercent": "100*(1-indexed_ms/baseline_ms)",
+    "speedupFactor": "baseline_ms/indexed_ms",
+    "cpuReductionPercent": "100*(1-indexed_cpu_ms/baseline_cpu_ms)",
+    "range": "min/max of paired trial ratios, not a confidence interval"
+  }
+}

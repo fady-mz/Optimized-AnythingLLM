@@ -1,3 +1,15 @@
+# Optimized AnythingLLM
+
+An independent fork of [AnythingLLM by Mintplex Labs](https://github.com/Mintplex-Labs/anything-llm), with a measured SQLite index for chat-history and per-user quota queries. The upstream MIT license and original documentation are preserved below.
+
+**Experimental; workload-dependent.** Across nine synthetic 100k–1M-row pairs, busy-user quota checks took **92.8–98.5% less time**. A constructed quota + history + insert sequence took **54.2–96.7% less time**. These are database measurements, not whole-app speedups.
+
+The tradeoff is substantial: about **9% more database storage** at those sizes, slower bulk inserts, and slower million-row sequences when the quota count is omitted. **Hosting or LLM cost savings have not been measured.** The migration is included, so evaluate it on a disposable copy before using this fork with an existing database.
+
+Read the [fix explanation, full results, limitations and reproduction steps](docs/query-efficiency/README.md). The fork includes all 12 raw benchmark pairs and an actual Prisma-client correctness check (168 comparisons passed). The upstream contribution is proposed as a draft for maintainer review.
+
+---
+
 <a name="readme-top"></a>
 
 > [!NOTE]

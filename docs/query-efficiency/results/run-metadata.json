@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "049d721f900f394c1415ebd7db69a552194c9736",
+  "recordedAt": "2026-09-09T17:49:28.426164+00:00",
+  "scriptSha256": "43470140e8448b775c0cbf7073079d96d7ce6f873b6470511fd1919b845eb523",
+  "protocolSha256": "4fcd5d8ebed8057d0fa62d284d981246a18a65c960da20b140fee819cfb2b2f4",
+  "frozenStudySha256": "791f7797a82ff2a21503fd4e63332c45f54d719b0df06ec5754dc5796fafb9ea",
+  "candidateSqlSha256": "ef41b2206e660e18d91b002dfacacd30ae903597a8fb14837185daabddd5f014",
+  "candidateIndex": "workspace_chats_user_history_quota_idx",
+  "paidCalls": 0,
+  "externalWritesDuringBenchmark": 0,
+  "schemaBeforeSha256": "bdf2dcb190d74544fb0db2ccb20d9b1898883ebfa2ca86d8b9739410e0a2a7cd",
+  "samplesPerReadAndSequence": 31,
+  "warmups": 3,
+  "python": "3.12.2",
+  "sqlite": "3.43.1",
+  "platform": "Windows-11-10.0.26200-SP0"
+}
