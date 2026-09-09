@@ -1,0 +1,2 @@
+# Preserve the exact measured evidence bytes and their recorded SHA-256 hashes.
+*.json -text
